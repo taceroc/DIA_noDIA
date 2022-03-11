@@ -114,8 +114,11 @@ Pandas, Numpy, Keras, TensorFlow, Matplotlib, Seaborn.
 All the code that supports the analysis presented here is available on a dedicated GitHub repository
 
 
-
-
+To run the code, severals steps needs to be made
+1. Download the data from  [autoscan](https://portal.nersc.gov/project/dessn/autoscan/#), including the csv file with features
+2. Convert csv to feather file
+3. Run the 3sigma_data.py to create the train and test data sets
+4. Run job-final.sh, you need to specify the name of the model and the type of data. For example, the name of the model is "CCCC" to be run with the data mapped to 3σ and for the noDIA case. So the name would be "CCCC_3s2DH", this is necessary so file knows where to extract the data and if the difference image is used or not.
 
 
 
